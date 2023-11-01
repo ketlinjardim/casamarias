@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARIAS</title>
+
+    <!-- Google Fonts - Robot-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" 
+        rel="stylesheet">
+    
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img class="img-fluid" src="img/logoMarias.png" alt="Logo" >
+                
+            </a>
+            <button 
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-items"
+                aria-controls="navbar-items"
+                aria-expanded="false"
+                aria-label="Toggle navigation"               
+                >
+                <i class="bi bi-list"></i>
+            </button>
+
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dicas" href="#">Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </section>
+        </section>        
+    </nav>
+</header>
+
+<body>
+    
+    <!-- Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="3500" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+
+                <button 
+                    type="button" 
+                    class="active"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1"                    
+                ></button>
+
+                <button 
+                    type="button"                     
+                    data-bs-target="#slider"
+                    data-bs-slide-to="1"                    
+                    aria-label="Slide 2"                    
+                ></button>
+
+                <button 
+                type="button"                     
+                data-bs-target="#slider"
+                data-bs-slide-to="2"                    
+                aria-label="Slide 3"                    
+            ></button>
+
+            <button 
+                type="button"                     
+                data-bs-target="#slider"
+                data-bs-slide-to="3"                    
+                aria-label="Slide 4"                    
+            ></button>
+        </section>
+
+        <section class="carousel-inner">
+            <section class="carousel-item active">
+                <img src="./img/dailus.png" alt="Imagem 1" class="d-block w-100">
+                <section class="carousel-caption">
+                    <h5>Imagem 1</h5>
+                    <a href="#" class="btn btn-dark">Veja mais</a>
+                </section>
+            </section>
+
+            <section class="carousel-item">
+                <img src="./img/marimaria.webp" alt="" class="d-block w-100">
+                <section class="carousel-caption">
+                    <h5>Imagem 2</h5>
+                    <a href="#" class="btn btn-dark">Veja +</a>
+                </section>
+            </section>
+
+            <section class="carousel-item">
+                <img src="./img/ruby.webp" alt="" class="d-block w-100">
+                <section class="carousel-caption">
+                    <h5>Imagem 3</h5>
+                    <a href="#" class="btn btn-dark">Veja mesmo</a>
+                </section>
+            </section>
+
+            <section class="carousel-item">
+                <img src="img/vult.webp" alt="" class="d-block w-100">
+                <section class="carousel-caption">
+                    <h5>Imagem 4</h5>
+                    <a href="#" class="btn btn-dark">Veja logo</a>
+                </section>
+            </section>
+        </section> 
+       
+      </section>
+
+      <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+
+        <i class="bi bi-arrow-left-circle-fill"></i>
+  
+      </button>
+  
+      <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+  
+        <i class="bi bi-arrow-right-circle-fill"></i>
+  
+      </button>
+  
+      <section class="col-12" id="mini-banner">
+        <section class="row">
+          <section class="col-sm-3">
+  
+            <section class="card text-center">
+  
+             
+              <section class="card-body">
+                 <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSUbFDHtlJvpF7V7PUMVa6vAOQ6-37JwAIsnJYKSuwC2rQr2sd3q7ZiYhMc517-pStw90styPKhQXhbpbY5aA7ioLMPRvn3GEHmTDNmvWJKNlq8V4ez_M11r_c_8Kci9nxQR5R-sA&usqp=CAc" alt="" class="maquiagem">
+                <p>Kit Lápis Colorido Melu </p>
+               <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#dica1" >
+                 Veja aqui!
+                </button>
+
+                 <!-- Modal -->
+                <div class="modal fade" id="dica1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Mais sobre o produto...</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                           
+                            <p >
+                              <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSUbFDHtlJvpF7V7PUMVa6vAOQ6-37JwAIsnJYKSuwC2rQr2sd3q7ZiYhMc517-pStw90styPKhQXhbpbY5aA7ioLMPRvn3GEHmTDNmvWJKNlq8V4ez_M11r_c_8Kci9nxQR5R-sA&usqp=CAc" alt="">
+                              <h1>Kit Lápis Colorido Melu</h1>
+                              Kit Lápis Retrátil Para Olhos Colorido da Melu by Ruby Rose
+                              vem com 6 cores super pigmentadas e fácil de aplicar, com alta durabilidade, os lápis coloridos tem uma textura macia, que desliza suavemente, garantindo um traço uniforme e linear.
+                              Esse produtinho que promete resistência à água com sua ponta fina garante um traço preciso, que permite criar diversos efeitos na make,
+                               com muita praticidade e alegria que Melu sempre trás. Conta com um apontador embutido, tornando o seu uso prático e fácil.
+                            </p>
+                            <a href="https://www.rubyrosemaquiagem.com.br/produto/3095-kit-lapis-colorido-melu-ktc0049" class="btn btn-dark" target="_blank" >Comore aqui</a>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                             
+                          </div>
+                       </div>
+                    </div>
+                </div>
+                
+  
+              </section>
+            </section>
+  
+            
+          </section>
+  
+          <section class="col-sm-3">
+  
+            <section class="card text-center">
+  
+             
+  
+              <section class="card-body">
+               <img src="https://www.marimariamakeup.com/arquivos/ids/162536-undefined-undefined/ginger-glow-classic-tampa-laranja-mari-maria-makeup-branca-cilios-lashes-naughty-mari-maria-makeup.png?v=638173283030500000" alt="" class="maquiagem">
+                <p> Ginger Glow Mari Maria Makeup</p>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#dica2" >
+                  Veja aqui!
+
+            </button>
+
+               <!-- Modal -->
+                  <div class="modal fade" id="dica2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel">Mais sobre o produto...</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                             
+                              <p >
+                                <img src="https://www.marimariamakeup.com/arquivos/ids/162536-undefined-undefined/ginger-glow-classic-tampa-laranja-mari-maria-makeup-branca-cilios-lashes-naughty-mari-maria-makeup.png?v=638173283030500000" alt="">
+                                <h1>Ginger Glow Mari Maria Makeup</h1>
+                                Uma embalagem sofisticada e prática o batom líquido Ginger Glow Mari Maria makeup possui cores intensas, textura aveludada e alta pigmentação.
+                                 Sua fórmula hipoalergênica é leve e proporciona um acabamento matte que dura o dia todo, sem tirar o conforto dos lábios e sem transferir.
+                                 Possui um aplicador moderno que facilita o contorno da boca e promove um acabamento mais preciso. Produto hipoalergênico.
+                                  Redescubra lábios intensos e apaixonantes!
+                              </p>
+                              <a href="https://www.marimariamakeup.com/batom-liquido-classic-ginger-glow/p" class="btn btn-dark" target="_blank">Compre aqui!</a>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                               
+                            </div>
+                         </div>
+                      </div>
+                  </div>
+  
+              </section>
+            </section>
+  
+            
+          </section>
+  
+          <section class="col-sm-3">
+  
+            <section class="card text-center">
+  
+              
+  
+              <section class="card-body">
+               <img src="https://dailus.vteximg.com.br/arquivos/ids/167292-260-298/MENTOS---SITE---800X915---KIT-ESMALTES.png?v=638312528207030000" alt="" class="maquiagem">
+                <p>Kit esmaltes dailus feat.mentos</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#dica3" >
+                  Veja aqui!
+
+            </button>
+
+               <!-- Modal -->
+                  <div class="modal fade" id="dica3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel">Mais sobre o produto...</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                             
+                              <p >
+                                <img src="https://dailus.vteximg.com.br/arquivos/ids/167292-260-298/MENTOS---SITE---800X915---KIT-ESMALTES.png?v=638312528207030000" alt="">
+                                <h1>Kit Esmaltes Dailus feat. Mentos</h1>
+                                Já imaginou uma coleção de esmaltes inspirada nos sabores favoritos das balas mais amadas do mundo? A DAILUS tornou realidade!
+                                Conheça os 7 vidrinhos irresistíveis de DAILUS FEAT. MENTOS: são 5 esmaltes cremosos,
+                                 1 óleo hidratante para unhas e cutículas e 1 top coat multicolorido pra você se deliciar com as cores que são tendência da estação. 
+                                 E o melhor? Além da qualidade DAILUS que você já conhece,
+                                 todos têm os cheirinhos deliciosos das balinhas MENTOS!
+                              </p>
+                              <a href="https://www.dailus.com.br/kit-esmaltes-dailus-feat-mentos/p" class="btn btn-dark" target="_blank">Compre aqui!</a>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                               
+                            </div>
+                         </div>
+                      </div>
+                  </div>
+  
+              </section>
+            </section>
+  
+            
+          </section>
+  
+          <section class="col-sm-3">
+  
+            <section class="card text-center">
+  
+              
+              <section class="card-body">
+              <img src="data:image/jpeg;base64,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" alt="" class="maquiagem">
+              <p>Paleta de Sombras Camila Loures </p>
+              <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#dica4" >
+                      Veja aqui!
+
+                </button>
+
+                   <!-- Modal -->
+                      <div class="modal fade" id="dica4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Mais sobre o produto...</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                 
+                                  <p >
+                                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVEhgUFRQZFRIWGhocGBkWEhkSEhUSGBwdHBgYGBkcIC4lHB4tHxgYJjgoKzAxNTU1GiQ7QDs1Py80NTEBDAwMEA8QHxISHzEkJCs0Nzc1NDQ0NzQ0NDQ0MTQxNDQ0NDQ0NDQ0NDQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYCAwQBBwj/xABQEAABAwEEBAgJBQwJBQAAAAABAAIRAwQSITEFBkFRExQiMmFxgZEjUpKTobHR0vBCgrLB4QcWJDM0RFVic3SUohUlQ1RjZHKE8TVFU8LT/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAIxEBAQACAQQCAwEBAAAAAAAAAAECEQMSITFRBEEiMoGxE//aAAwDAQACEQMRAD8A+zIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIg8RFxWm0TgMvX9iLJt7abRsGXr+xczSViN6xqVAASSAAJJJgBozJJyCza6zHTde6Vx6Us73uBDmsAGGJBKgXa5U3E8BZ7VaWAkF9Cz3qRIwIa9xaHdiwq6034v6LtjoyvWWm6OqXpGbqpPibxjfa7ovESsrNRe9ocGgAkiDVfOBIxw6FEDWBn6Ktf8AB0/fXTT1mIEDR9raBkOLsAHYHqs6SXEn+K3zr/YveJP8VvnX+xcTdZSfzG1jrot99bWafJ/NLUOukPeQ038Sf4rfOv8AYveJv8VvnX+xYN0zP5tXHXTHvLaNK/5et5se8hpjxN/it86/2JxN/it86/2L06W/y9Y9VMe8tTtNx+a2g9VIe8hps4m/xW+df7F7xN/it86/2LmdrAR+ZWs9VEe+tTtZj/cbYeqg331TTt4m/wAVvnX+xe8Vfub55/sUedaT+jraf9u331gdbT+jLf8Aw7PfQSvFqm4eeenFqm4eff7FE/fa79GW/wDh2f8A0WY1rP6Nt/8ADs99BIVWVGNLoBu4wKryT2QsmUKzxevhgOTSCSB0yM1HnWa8IOjrbBzBs7CD/OvGaWpn/tlpHXZGe8oJHgajDLqoIyiCCfQpxhwCrVLSLJkWGuw7xQa094cu1ummjF9KsxvjPp8kdcEou5pMrJroWilVDgHNILTiCDIIW7NCxuRamuhbVWLHqIiDltjyBG+ZXBniu23ZDt+pcTeas11wY1HwCZAAEyTDQBmSdgC+Vay63cYfwLWPdZA43w14a+0lpwk/Jp4AwMT6rDp21OtVd9maSLNSc0VA0w60VSA65IyY3Cd57CKHaLPcqPwgh7hAEAAOIAA2BZyvS3jj1XX0nfvtusxovDWiA1lRjWtaBgAIwCsumqhszGO5b784CoGlsBp25870L5pbDyHdR9S+ka5uijZjng47jg1mSzMrrbdwm5EUNPumBRqE9FVuzs6V3aI0ia9R7C17Cym6pJqNeHBpaIED9ZV9hxG3fiR0jbv+rBS2rB/CKwAgcVrH+ammOVtTLGSOD79Gf+Kr5xixOurB/ZVfOMVPKwdktbpcY+maW0w2z0bPWIqPFpp3wG1GgsF1joJOf4wDDcopuubTlRrzu4Rk+tatbyeIaMxwNnEzlPB0SPUqtRqEEY5QBj1ycuoq7bx48bjurszWYGfBVRAkzUZksHa2sDg006ocZjwjMYzy6lXWWsBgfeiQ1haBdh4wvwAIF0DtJWu1ubN5pmYEE7ZaMBMAADs9ZLjhrwsx1tbMGlWk5ctuOz0lb2ayS2+KVW7+0YPg4qkcLe5I5YzcLzRyMzA2nd6ZUpZnvDXN3mTHJaMrogiIg5jcZyRcePGzwsrtYYIBp1YMweEYQYzy3Lu1e0jxqsaIbUpkUy+897SCA5ogAY/KGahmUw5sOOLZIdAvCMyycAYkLt1CEaRfBBBovOEc4vpkkgDAkkntKNcnDjjjbHO/W5gMcHX85T9qwdrkwCeCr4f4jPaqw88paqx5J6isdVcbhi+lV7aGWez14qOFpbea0PaHMBaHQ4nD5Wxc7dLTkyr5xnt6VqeZ0fo2TA4ET0i5Tw+Ny10acie3A+ro+OldI4ZXVSmiLTxivwIFRhuF95z2kQCGxAx2+hVqrr/TY4hrK95pIxLC0xh4ysurTSNIAmYNGoRjI59Odk96+N2jnu/1O9a9nxeHHkt6vrTlzclxksfR9DfdBpGoWCm9rXAm45zW+E2Gm4E3SdxwX07R9e9SY+8HBzQZAiZ6JMHf0yvy/a2YEjOF9n0LpB1lNIkni1Y021GHHgqjwA2qw+KTF4dMrPyeGcdki8XJc5uvoizpFYMWVPNeZ0raiIqy5LfkO1cDzyCu+35DtUe/mHt+tZydsPCpamUw+rannEi1VP8A1VG0qfD1P9dT6ZV71F51q/e3+pioelfx9X9pU+mVz5HTi8I22cx3UfUvouvB8BZfndU3WRK+b2x4DTO3BWDT2l7U+nS4dtJjBNxrD4QCG4v5Rxi6dm3BMZbiuWUmUY0Xzt78hGzf04qa1XM2mtAj8Eq995m5V2hWFy8AZAjqPWp7U5xdWrOOyy1h/Mz7UmN3tMsp49qLCwdkpKro8Cg2o0kmGlw2QRsw3kLo0HoZtcOc8uDAQBdIBJzOYO8d6100uU1atGl9C17TYNHcDSNQMszb8PYwtDqdKOeRM3T3KEp6nW6eVZnHAf2tLB3l9nYrHQtRNlszL7mtZZ6Qbce5hcTTZN66ROIXlNhInhKnn6nvKZZdPlvjytmog7PqXaWnGzOIx/tKWez5fQPjLZX1PtTwBxd7YGHhKRjr5cnZ3Lt/pOpZqrnMc55NMtLalR9RgBIN4AuwcLufSVCULTUIg2ivOGPGavVjy8U322s5Lbcezu+8u04TZ3QCCOXS5JnPn4/X6+5mrNpEzZ3uvTnUp8mTkOXhmculV6326owsaK9blZ/hNXDEZcrpUrrnpGqyx6OLK9RhfQJcWVnsc8htLF5BlxxOJ3lanc/62XXZJVtBWtzbvFn5gjw1NvKAwyfMYb/t79TNCWmjbH1K1G5TNN7Wm/TdynPYbsMcSMGk7l8r/pq0f3uv/FVPeVn1C07VbWrvfXqVbllqvYyrVfUYajLrgIJzgHpiVdM58ts1f8RbzitNc8k9SMqy0OOB9GC8gEGTAAk9AXOY1i5R9AeR/R2jQdtEfQZn0exe0cxAG/qwdnvgzljjKjaNve6zWWmWAU6dMcG8GS+mWtALhsMNEjDPILfStQaRecBMkSYBO/NdZHDK7qe1eH4e0ZjgakH59LDcvjFfnu/1H1r65o21ObWFVhY4hjmAO5nKc0kkyMRchfM9N2BtMtqMffp1JIJzBzjp+xe74OUxysv28/yJbJr6Qtp5h6ivtOuNEDRtN4wddoD+Zi+K2g8g9RX2zXc/1TT6rP8ASYtfP/aHx/1q/jasqSxG1ZUl8+PRW1ERVlyW/Idqjn8w9qkbfkO1Rz+Ye1ZydsPCqah861fvdT1MVC0r+Pq/tH/TKvmoZ5Vr/e6nqYoO36n2p9R72saWue9w8I0YOcSPQVjObb4rJFD0jjyRndMdZV21t0dR4tZnscH3g7lNeHDms2jpKjtI6iW0i81jbwy8Iz2rfbdWqkMFCzuFT5cvluQiL3TO1WfrpnLtluIezghoE9+CldXKjqDnFzgQ5r2mDPJe0jH50HsWv70bc6GFmcSb7BtnOV2WTVG00ahe5kg0y0cprpfLS2YPQVZZ4ZuN8oulaAzirH/i6tMsfOUuay6e/D5xUjo2qGWtllYZbSouc8+NUc5hx6YJPz1yu1P0hXY1j6bA1ghnLa2AYHbzQlm1N0hZiH06bL5Bbi9rxdJBOE9AV2dPZJWZ34PZ/wBnS+gF32V4umTtO1cNo0fWpUqTHth7KbARmOEY1oOO3GVHX3kcqmS7fkueer2rpxzLHvHlor3qjnGS0tdg0S7YGnqifQuWyVM+iDPb/wAqU1d0U99pfLiwmi89gczD0qt6KDm8l2QwneP+Fq5S49kxxymW7/W3SzoqM+N0qQ14fNm0c05cWgQd7aajNK0ySDd35ZE9AzyWvTWjWMoWZ7GOY6tTL3lzpDnAMMtwwHKKuN7Lcbcte0LxcKZ1cpgPqtHOFCs7vbc9TioS+8YRjvVu+5nY79rrNOLjZ35777Fd6XPHK495rSLZzI6frW1jW+FvTcDBejO7dMx2KQGrFtabnAguym8IXR95ekGgs4Nh4UQ6Xg4EEZjLNJ2cbLRlYtoUrgJZdYGknFrCBBOck4BSNWpTa2nfZeJZgd2DZ+OhddTVm02elZ2MY1xDA2qLwIDrrRgduMrTZqNuZyXWcQBHJO4b5WpWLj3Y2Fz+Eu3Q2zPBLXZlr5ECJmCJ2bOlUvSlipNY2tRvNY8kFrthxxE4xgdp2K+UNH2sVL1ekRRc04McC4PloaRgYwmQoR2pekbS685jGsHNBqXB15GSvR8fKY5bt0xyY246kUe0c09RX2vXs/1RT/2306apdX7ltvIIApY/4p91Xf7odIt0U1jucw2dp2iRUYCt/Lzxys6btOHG443a/DasqSxG1ZUl4461tREVZclvyHao2pzD2qTtowHb6VHXZBG1ZydsPCn6ivAq2ymTyxaS8jbwb2tLHdRg9yoemxNapEjwj9pE8s7ldNKaNfTtAr0HXLQ3ml34uqyZNKqNx2HYfRR7XW4So98XHlzr7JBLHyZbO0Sc1jP3HTh82VzspiNpwOeeGXb7epYCnAmDMY/KAEZ+grexuEyRGWEtOOAjvXrWkjp7R0berduXPb0dMeULOCQJgztMgjbHcpOjoxhG0mJwmSJ2TtjHsC57PTESWktzOEAAzEndkpGiDECeTjBBiZmJPbuyCm0saqWjmEENaYxzkukbDuW59hpFpFy6RBz5WwkfG9ddnbJMi9OJyi6QASPjZ0LGsyB6DuDycSDJxF4Y/aqzYnnfkVi/d6f0Ka4wux35FYv3an9Cmo2u8iIAOOM7oWcv2aw8O7V78sd+71Pp01RLKRdGQgCOj4EK36BtTxa3EMk8C4QXRDS+leOWJAk9ypdGqRdgTAbhJiROGWS3J+Mc+qdVST3ckiTjnOJHQd0H610a7fkejf3c/RpKOq1CGuFzDDEECCRujOZC6Nbq73WawNcwNayzgNMzeJDL2zCAGd5zzW8W8cp1T+qmVdPuRf8AUH/sHfTYqYQrp9yIf1g/9g76bFteW7xqJFDCS50RiQ5xbIjCQZ6e+VyVXm/ALgd195kR0HoOI+uF0voRfEXrzIIi64nDLEiS0jpWoUjwl7FsgjaMCCW9XNiPYV6NR4mNS8IN9xF8DB5IMEkiZjoj/hd7WYCCSTON9+yOmDzhjOJgbVzVQRcdcxBc3m4Nfme4A96lKLBLTE5EkjDm4uaSeTuidkpJEtdlgY0iWuL4GEzjIBaST1j09SkKDGQA5pa/YGhxLgcQQQQMgcImMelR1B0OutAJxLZHNaDBcRIMDlGMTJOJgqYpU2NiLrDyoJIaNhdBEb/5eoq6jNrk0pRuse5r3gXTPhHiCAThjl27ApfXp86Ls9OfCVn2ZjBtc+813qaSobWO2BlJ5cRGQxcb7nEgACIJjEDPacJK79X9GVbTUpWi0G9UYxraVMGadmpQMt9Rwgud2bMOfJrssvZ9OG1ZUliFnSXOGTaiIqy8IUfarNHKbkpBEWXSvWqytqNgjFUHSurbWPvMaG1Q6QXOfwdQTJY/HkzsIiPV9PtdmjlNyXI4A5jFY1p2l3FFs79HXQK1J9nqDNj3V8HbS1zTDh0jPBdFOnorYR5Vf2q43Rv9AS6PgBTWPpr8var06Gjvkn+et171vFlsB6fn1farHA3+gL2Bv9H2Jqek/L2rjqNg2k+cre1aqg0d8pw8utsVoAG/0fYvYHwPsV1PR39q0/Smj+DYw1BcptDGDwvJYAABIEnBozXFaLfop2dYDtrK6BgOXq+xa3OA2ekexNY+idX1VIoaR0VTeXttADi0tJPCnkkgkYjoC4eE0GI8M0R+taF9CNb9UeUPYseMfqjyx7E/H0ay9qBxjQeQrtA3XrRC3Wm1aFqsYx9dj2Um3WDwwutwESBjzRnuV6Fp/VHlj2Jxn9UeW32JuGs/ahUKGgh8pju20KV0PatEWZ5qWd7GVHNukjhnSwkGIdIzAVqbaR4oHzwfqXRRcHbAO2fqV3EvXrvVObZdEuyDTn8u0ZnOMcF0N0dosmbjST+tWx271bg0fEL26Feqs6qpO0foza1va6sZjt6AvKh0WJvFsHOTWM9at10L26E6qmqpX9IaIYCL7Wg54188TPXJK57RpnRMG4H2iocqdFtoqVHkDAAGB2khX64PgL0NHwFeqpqvl2jdW+M1DUtFMB7sGUWuc5lmpnYXTLqhAEuyGQ6PpOjbAyjTDGCAAB3Lpa0DL1LNrZU3s8DWyt4CBFWbXqIiIIiIPCFrFBoya3yQtqINXBN8UdwXvBN8UdwWaIu2HBN8UdwTgm+KO4LNENsODHijuCcGPFHcFmiIw4MeKO4LzgW+KPJC2Ii7auLt8VvkhOLt8VvkhbUQ3Wri7fFb5ITi7fFb5IW1EN1q4u3xW+SF62k0ZNA6gAtiIbeXBuHclwbh3LJERjcG4dyXBuHcskQY3BuHclwbh3LJEGNwbh3L0BeogIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiA
+                                    iIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD/9k=" alt="">
+                                    <h1>Paleta de Sombras Camila Loures 10,8g</h1>
+                                    A Paleta de Sombras Camila Loures é uma colaboração entre a renomada youtuber brasileira e uma destacada marca nacional de maquiagem.
+                                     Com tons versáteis e diversas texturas, ela oferece uma ampla gama de possibilidades para qualquer ocasião, desde reuniões de trabalho até baladas com as amigas.
+                                      Com sombras mate,
+                                     cintilantes e superbrilho altamente pigmentadas e fáceis de esfumar, essa paleta é o toque final ideal para um visual impecável, além de ser vegana.
+                                  </p>
+                                    <a href="https://www.vult.com.br/paleta-de-sombras-camila-loures-108g/" class="btn btn-dark" target="_blank">Compre aqui!</a>
+
+
+
+
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                   
+                                </div>
+                             </div>
+                          </div>
+                      </div>
+             
+
+            </section>
+          </section>
+
+          
+        </section>
+
+      </section>
+    </section>
+  </section>
+       <!--destaques-->
+     <section class="container" id="featured-container"  >
+          <section  class="row" >
+               
+                  <section class="col12 col-md-4" id="dicas" >
+                    <h1 class="title texto-primario" id="texto" >Se inspire!</h1>
+                    <p class="subtitle texto-secundario" id="texto">Veja nossos videos!</p>
+                 </section>
+
+                <section class="col-12 " id="videos">
+                     <section class="row g-4">
+                         <section class="col-sm-3">
+                          <iframe src="https://assets.pinterest.com/ext/embed.html?id=880735270876658344" height="520" width="236" frameborder="0" scrolling="no" ></iframe>
+                          
+                          </section>
+                        <section class="col-sm-3" >
+                          <iframe src="https://assets.pinterest.com/ext/embed.html?id=1077345542092373582" height="520" width="236" frameborder="0" scrolling="no" ></iframe>
+                        </section>
+                       
+                        <section class="col-sm-3">
+                          <iframe src="https://assets.pinterest.com/ext/embed.html?id=366761963417894499" height="520" width="236" frameborder="0" scrolling="no" ></iframe>
+                        </section>
+                        <section class="col-sm-3">
+                          <iframe src="https://assets.pinterest.com/ext/embed.html?id=4362930881751385" height="520" width="236" frameborder="0" scrolling="no" ></iframe>
+                        </section>
+                        
+                      </sectionc>
+                </section> 
+                </section>     
+          </section> 
+    </section>
+      
+          <!--final-->
+     <!-- Informações -->
+    
+     <section class="container" id="info-container">
+      <section class="col-12" id="sobre" >
+          <h2 class="title primary-color" id="duvidas"  >Sobre nós</h2>
+         
+      </section>
+
+      <section  >
+          <p id="textinho">Este site tem como objetivo ensinar maquiagem, desde as técnicas mais simples até as mais complexas. Aqui, você encontrará dicas e truques para facilitar a sua jornada na maquiagem, tornando-a mais acessível e agradável. 
+            Nosso compromisso é oferecer informações de forma leve e descomplicada para todas as pessoas que desejam aprimorar suas habilidades de maquiagem."</p>
+          
+
+     
+  </section>
+  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="duvidas">Duvidas?</button>
+
+
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nova menssagem</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+              <div class="modal-body">
+                <form>
+                   <div class="mb-3">
+                     <label for="recipient-name" class="col-form-label">Destinatário:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                   </div>
+                   <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Menssagem:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+             </div>
+             <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+             <button type="button" class="btn btn-primary">Enviar</button>
+             </div>
+    </div>
+  </div>
+ </div>
+
+  <!-- Fim do container Informações -->
+  <!-- FOOTER -->
+
+    <!-- Informações -->
+   
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <section class="container" id="contato">
+          <section class="row">
+              <!-- FOOTER TOP -->
+              <section class="col-12" id="footer-top">
+                  <section class="row justify-content-between">
+                      <section class="col-4">
+                         
+                          <img src="./img/Marias.png " class="img-fluid img-thumbnail" id="logo" >
+
+                      </section>
+
+                      <section class="col-12 col-md-4 googlemaps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29814.62934301664!2d-48.50327944559778!3d-20.919211679903672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bbe19f408a18a7%3A0x5ff5d023e3e9b7d2!2sRarus%20Perfumaria%20Bebedouro!5e0!3m2!1spt-BR!2sbr!4v1698858078756!5m2!1spt-BR!2sbr"
+                         width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="logo" ></iframe>                      
+                        </section>
+
+                      <section class="col-sm-5 googlemaps" id="social-icons">
+                          <i class="bi bi-facebook" class="col-1"></i>
+                          <i class="bi bi-instagram"  class="col-1"></i>
+                          <i class="bi bi-youtube"  class="col-1"></i>
+                          <i class="bi bi-twitter"  class="col-1"></i>
+                      </section>
+                  </section>
+              </section>
+          
+ 
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+            crossorigin="anonymous" defer></script>
+</body>
+
+</html>
